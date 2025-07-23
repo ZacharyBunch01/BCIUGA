@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UGA BCI Research Organization</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --uga-red: #ba0c2f;
+      --uga-black: #000;
+      --uga-dark: #232323;
+      --uga-gray: #f6f6f6;
+      --uga-card: #fff;
+      --uga-link: #ba0c2f;
+    }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--uga-gray);
+      color: var(--uga-dark);
+      display: flex;
+      flex-direction: column;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 28px 24px 12px 24px;
+      background: var(--uga-gray);
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--uga-red);
+      letter-spacing: -2px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img {
+      height: 2.1rem;
+      width: 2.1rem;
+      vertical-align: middle;
+    }
+      nav a {
+        margin-left: 24px;
+        text-decoration: none;  /* This removes the underline */
+        font-weight: 700;
+        color: var(--uga-dark);
+        transition: color .2s;
+        border-bottom: none;  /* This removes the border-bottom (the underline effect) */
+        padding-bottom: 2px;
+      }
+    nav a:hover, nav a.active {
+      color: var(--uga-red);
+      border-bottom: 2px solid var(--uga-red);
+      border-bottom: none;  /* This removes the border-bottom (the underline effect) */
+      text-decoration: none;  /* This removes the underline */
+    }
+      nav a.active {
+        color: var(--uga-red);  /* Makes the active link red */
+        border-bottom: 2px solid var(--uga-red);  /* Adds a red underline to the active link */
+        border-bottom: none;  /* This removes the border-bottom (the underline effect) */
+        text-decoration: none;  /* This removes the underline */
+      }
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px 0 24px;
+    }
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 900;
+      margin-bottom: 14px;
+      letter-spacing: -1px;
+      color: var(--uga-black);
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 34px;
+      color: #4d4d4d;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 44px;
+    }
+    @media (max-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      nav, main {
+        padding: 16px 5vw;
+      }
+      h1 { font-size: 2rem; }
+    }
+    .card {
+      background: var(--uga-card);
+      border-radius: 14px;
+      box-shadow: 0 3px 16px 0 rgba(0,0,0,0.09);
+      padding: 30px 26px;
+      border-left: 6px solid var(--uga-red);
+      min-height: 170px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--uga-red);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .card ul { margin: 0; padding-left: 18px; }
+    .card li { margin-bottom: 7px; }
+    .join-card {
+      margin: 48px auto 0 auto;
+      max-width: 490px;
+      text-align: left;
+      background: #fff;
+      border-left: 6px solid var(--uga-black);
+    }
+    .join-btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 11px 28px;
+      background: var(--uga-black);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      border-radius: 3rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+      cursor: pointer;
+      transition: background .2s, transform .12s;
+      text-decoration: none;
+      outline: none;
+      letter-spacing: .02em;
+    }
+    .join-btn:hover {
+      background: var(--uga-red);
+      transform: scale(1.03);
+    }
+    footer {
+      margin: 38px 0 12px 0;
+      color: #8a8a8a;
+      font-size: 1rem;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+    .disclaimer {
+      font-size: 0.92rem;
+      margin-top: 8px;
+      color: #b0b0b0;
+    }
+    a {
+      color: var(--uga-link);
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="logo">
+      <!-- Optional UGA arch SVG icon, can remove if you want text-only -->
+      BCI UGA
+    </span>
+    <div>
+      <a href="#about" class="active">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#join">Get Involved</a>
+    </div>
+  </nav>
+  <main>
+    <h1>BCI Research Organization</h1>
+    <div class="subtitle">
+      Advancing brain-computer interface research and education at the University of Georgia.
+    </div>
+    <div class="grid">
+      <section class="card" id="about">
+        <h2>Purpose</h2>
+        <p>
+          The BCI Research Organization was founded to foster interdisciplinary collaboration and research in the field of BCI (brain-computer interface) at UGA.
+          We connect undergraduate and graduate students with opportunities in neurotechnology, data science, engineering, and cognitive science.
+        </p>
+      </section>
+      <section class="card" id="projects">
+        <h2>Current Goals</h2>
+        <ul>
+          <li>Analyzing open-source BCI/EEG datasets</li>
+          <li>Composing white papers and research proposals to support future BCI initiatives at UGA</li>
+        </ul>
+      </section>
+    </div>
+    <section class="card join-card" id="join">
+      <h2>Get Involved</h2>
+      <p>
+        Interested in BCI research or want to collaborate?
+        <br/>
+        <strong>Email:</strong>
+        <a href="mailto:zcb94880@uga.edu">zcb94880@uga.edu</a>
+      </p>
+      <a href="mailto:zcb94880@uga.edu" class="join-btn">Contact Us</a>
+      <div style="font-size:0.97em; color:#777; margin-top:10px;">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="disclaimer">
+      Not an official publication of the University of Georgia.
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+<script>
+  // Get all the nav links
+  const navLinks = document.querySelectorAll('nav a');
+
+  // Function to check which section is in view and add the 'active' class to the corresponding nav link
+  function setActiveLink() {
+    let foundActive = false;
+    navLinks.forEach(link => {
+      const sectionId = link.getAttribute('href').substring(1);
+      const section = document.getElementById(sectionId);
+
+      // Check if the section is in view
+      const rect = section.getBoundingClientRect();
+      if (rect.top >= 0 && rect.top <= window.innerHeight) {
+        if (!foundActive) {
+          link.classList.add('active');
+          foundActive = true;
+        }
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+
+  // Add event listener to track scroll and update active link
+  window.addEventListener('scroll', setActiveLink);
+
+  // Call the function once on load to highlight the active section
+  window.addEventListener('load', setActiveLink);
+</script>
+
