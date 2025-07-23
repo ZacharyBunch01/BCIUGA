@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/BCIUGA/static/css/main.e6c13ad2.css",
+    "main.js": "/BCIUGA/static/js/main.39897254.js",
+    "static/js/453.8d2c3233.chunk.js": "/BCIUGA/static/js/453.8d2c3233.chunk.js",
+    "index.html": "/BCIUGA/index.html",
+    "main.e6c13ad2.css.map": "/BCIUGA/static/css/main.e6c13ad2.css.map",
+    "main.39897254.js.map": "/BCIUGA/static/js/main.39897254.js.map",
+    "453.8d2c3233.chunk.js.map": "/BCIUGA/static/js/453.8d2c3233.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.39897254.js"
+  ]
+}
